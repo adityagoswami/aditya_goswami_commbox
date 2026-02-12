@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+/* If you want to keep the custom colors we defined earlier 
+   in the new v4 CSS-variable way: */
+@theme {
+  --color-brand-dark: #111827;
+  --color-brand-gray: #6B7280;
+  --color-brand-light: #F9FAFB;
+}
+
+@layer base {
+  body {
+    /* If slate-900 is still acting up, use the hex directly 
+       or use the default 'gray' which is always available */
+    @apply antialiased text-gray-900 bg-white;
+  }
+}
